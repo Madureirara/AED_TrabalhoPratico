@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace Trabalho_Pratico
 {
-    internal class Lista_Encadeada
+    public class Lista_Encadeada
     {
+        int[,] posicao;
+        private Nodo head;
+        private Nodo tail;       
+
+        public Lista_Encadeada()
+        {
+            Labirinto labirinto = new Labirinto(posicao);
+            this.head = new Nodo(labirinto, null);
+            this.tail = head;
+        }
     }
 }

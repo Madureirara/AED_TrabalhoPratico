@@ -6,8 +6,16 @@ using System.Threading.Tasks;
 
 namespace Trabalho_Pratico
 {
-    internal class Labirinto
+    public class Labirinto
     {
-        int superior, esquerda, inferior, direita;
+        int x = 0;
+        int y = 0;
+        int[,] posicao= new int[0,0];
+        public Labirinto(int[,] posicao)
+        {
+            this.posicao = posicao;
+            this.x = posicao[x,0];
+            this.y = posicao[0,y];
+        }  
     }
 }

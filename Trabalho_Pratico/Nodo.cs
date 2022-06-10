@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace Trabalho_Pratico
 {
-    internal class Nodo
+    public class Nodo
     {
+        public Nodo seguinte;
+        public Labirinto labirinto;
+
+        public Nodo(Labirinto labirinto, Nodo seguinte)
+        {
+            this.labirinto = labirinto;
+            this.seguinte = seguinte;
+        }
     }
 }
